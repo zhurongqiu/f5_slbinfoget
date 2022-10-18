@@ -6,10 +6,10 @@ requests.packages.urllib3.disable_warnings()
 ssl._create_default_https_context = ssl._create_unverified_context
 
 bigip = requests.session()
-bigip.auth = ('admin', 'Hrxj@1234F5')
+bigip.auth = ('account', 'password')
 bigip.verify = False
 bigip.headers.update({'Content-Type' : 'application/json'})
-ip = ('172.17.4.153')   #IP地址
+ip = ('255.255.255.255')   #IP地址
 
 #def VSname():
 #    response = bigip.get(url='https://' + ip + '/mgmt/tm/ltm/virtual/', verify=False)
